@@ -9,7 +9,7 @@ export default class CampFilter extends React.Component {
                id={this.props.id}
                defaultChecked={this.props.inuse}
                onClick={() => this.props.changeFilter(this.props.id)}/>
-             &nbsp;
+             {'\u00a0\u00a0\u00a0\u00a0'}
              <label ref="text">{this.props.id}</label>
        </div>
       )
