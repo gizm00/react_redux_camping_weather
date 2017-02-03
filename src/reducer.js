@@ -97,7 +97,7 @@ function recvWeather(state, weatherDate, result) {
 function reqWeather(state, weatherDate) {
   return state.merge(Map({
     'weatherSummary': "Loading...",
-    'selectedDate': moment(weatherDate)
+    'selectedDate': weatherDate
   }))
 }
 

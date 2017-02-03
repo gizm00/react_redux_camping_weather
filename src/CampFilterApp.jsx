@@ -21,15 +21,12 @@ export class CampFilterApp extends React.Component {
         <Jumbotron>
           <h1>Crater Lake Camping</h1>
         </Jumbotron>
-
         <br></br>
         <CampFilterList {...this.props}/>
         <br></br>
         <WeatherDatePicker {...this.props}/>
         <br></br>
         <CampMapContainer {...this.props} />
-
-
       </div>
   )};
 }
@@ -53,7 +50,6 @@ function mapStateToProps(state) {
     currentLat: state.get('currentLat'),
     currentLong: state.get('currentLong'),
     gmapMarkers: state.get('gmapMarkers'),
-    isFetching: state.get('isFetching'),
     selectedDate: state.get('selectedDate')
   };
 }

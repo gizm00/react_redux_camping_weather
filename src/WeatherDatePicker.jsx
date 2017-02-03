@@ -10,10 +10,10 @@ export default class WeatherDatePicker extends React.Component {
   checkDate(selectedDate) {
     if (selectedDate.isBefore(this.props.currentDate)) {
       alert("Please pick a date in the future.")
-      return null
+      return undefined
     }
     else {
-      return selectedDate.format("YYYY-MM-DD")
+      return selectedDate
     }
   }
 

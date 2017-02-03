@@ -162,7 +162,6 @@ set_state(get_campgrounds(features))
 
 function set_state(campgrounds) {
   let today = moment()
-  console.log(today)
 
   store.dispatch ({
   type: 'SET_STATE',
